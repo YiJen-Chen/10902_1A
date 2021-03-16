@@ -1,0 +1,28 @@
+#include<iostream>
+#include<iomanip>
+
+
+
+using namespace std;
+
+#include"Rectangle.h"
+
+int main(){
+	double r1_width, r1_height, r2_width, r2_height;
+	cin >> r1_width >> r1_height >> r2_width >> r2_height;
+	Rectangle rectangle_1(r1_width, r1_height);
+    Rectangle rectangle_2(r2_width, r2_height);
+    
+    cout << fixed << setprecision(2);
+    cout << rectangle_1.getArea() << " " << rectangle_1.getPerimeter() << endl;
+    cout << rectangle_2.getArea() << " " << rectangle_2.getPerimeter() << endl;
+    
+    rectangle_2.width = 5.0;
+    rectangle_2.height = 2.5;
+    
+    cout << rectangle_2.getArea() << " " << rectangle_2.getPerimeter() << endl;
+
+	return 0;
+}
+
+

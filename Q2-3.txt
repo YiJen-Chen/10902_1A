@@ -1,0 +1,13 @@
+#ifndef Rectangle_h
+#define Rectangle_h
+
+class Rectangle
+{
+
+    public:
+        double width,height;
+        Rectangle(double newWidth,double newHeight);
+        double getArea();
+        double getPerimeter();
+        };
+#endif
